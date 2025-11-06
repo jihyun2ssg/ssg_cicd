@@ -25,7 +25,7 @@ pipeline {
       steps {
         bat '''
         if not exist .venv (
-          "C:\\Users\\user\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe" -m venv .venv
+          "C:\\Python\\Python312\\python.exe" -m venv .venv
         )
         .venv\\Scripts\\python -m pip install --upgrade pip
         if exist requirements.txt (
